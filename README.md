@@ -131,13 +131,15 @@ name = 'Alastair'
 </pre>
 </code>
 
-``
-
-<main>
-  <h1>Hello {name}!</h1>
-  <button on:click={changeName}>Change Name</button>
-  <button on:click={resetName}>Reset Name</button>
-</main>``
+<pre>
+    <code>
+        `<main>
+          <h1>Hello {name}!</h1>
+          <button on:click={changeName}>Change Name</button>
+          <button on:click={resetName}>Reset Name</button>
+        </main>`
+    </code>
+</pre>
 
 We can also change variables directly in the HTML by using a function in the on:click event :
 
