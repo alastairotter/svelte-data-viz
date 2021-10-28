@@ -115,20 +115,20 @@ In Svelte variables are reactive, so if a variable is changed by some action in 
 
 For example, we can create a function to change the name value and add an `on:click` event to trigger that.
 
-In the script tags:
+Setup a 'name' variable and add two buttons to change it and to reset the value:
 
-<pre>
-export let name = 'Alastair'
+    <script>
+    export let name = 'Alastair'
 
-function changeName() {
-name = 'New Name'
-}
+    function changeName() {
+    name = 'New Name'
+    }
 
-function resetName() {
-name = 'Alastair'
-}
+    function resetName() {
+    name = 'Alastair'
+    }
+    </script>
 
-</pre>
 
     <main>
         <h1>Hello {name}!</h1>
@@ -138,13 +138,14 @@ name = 'Alastair'
 
 We can also change variables directly in the HTML by using a function in the on:click event :
 
-<button on:click={() => { name = 'Alastair' }}>Reset Name</button>
+    <button on:click={() => { name = 'Alastair' }}>Reset Name</button>
 
-Reactivity using $:
-Svelte also has a reactivity “watcher” which will perform an action when a value changes. We can use this to run functions to just output a value.
+### Reactivity using $:
+
+Svelte also has a reactivity “watcher” which will monitor variables and immediately run updates when they change.
 
 For example, we can console.log the value of name when it changes. Add this to the script section of the page:
 
-$: console.log(name)
+`$: console.log(name)`
 
 If you open the developer tools you’ll see the value of name output each time the button is changed.
