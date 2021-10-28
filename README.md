@@ -12,6 +12,10 @@ This is a non-comprehensive, work in pogress, on using Svelte.js for data visual
 
 [Svelte](https://svelte.dev/) is a component library and [SvelteKit](https://kit.svelte.dev/) is an app framework. In practice Svelte can be used to build single-page applications while SvelteKit can be used to build more complex applications. This documentation will focus on Svelte but the principles and practices are mostly applicable to SvelteKit as well.
 
+The primary purpose of this document is to keep a record of learnings and ideas on using Svelte for data visualisation, particularly in conjunction with D3.js and Leaflet.js.
+
+**Note:** This document is a work in progress and will change. The ideas and methods recorded here are not necessarily the best way of doing things, nor are they recommended practices. So treat as suggestions only, and feel free to [contact me](mailto:alastair@mediahack.co.za) with anything you think could or should be improved.
+
 **Some Svelte resources**
 
 - [Svelte site](<(https://svelte.dev/)>)
@@ -24,6 +28,10 @@ Svelte is different to other frameworks such as React and Vue in that code is co
 From the official Svelte documentation:
 
 > Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app. - [Svelte.dev](Svelte.dev)
+
+## Setting up for Svelte development
+
+Open your code editor (Visual Studio Code ia recommended). If you're using VS Code you should install the Svelte plugin for better code highlighting: open VS Code extensions in the left-hand bar and look for the Svelte extension. Install that.
 
 ## Starting a Svelte project
 
@@ -46,10 +54,6 @@ Switch into the new directory created:
 Then install Svelte and requirements:
 
 `npm install`
-
-## Setting up for Svelte development
-
-Open your code editor (Visual Studio Code ia recommended). If you're using VS Code you should install the Svelte plugin for better code highlighting: open VS Code extensions in the left-hand bar and look for the Svelte extension.
 
 ## Starting to code
 
