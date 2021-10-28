@@ -117,7 +117,7 @@ For example, we can create a function to change the name value and add an `on:cl
 
 In the script tags:
 
-<code><pre>
+<pre>
 export let name = 'Alastair'
 
 function changeName() {
@@ -129,17 +129,12 @@ name = 'Alastair'
 }
 
 </pre>
-</code>
 
-<pre>
-    <code>
-        `<main>
-          <h1>Hello {name}!</h1>
-          <button on:click={changeName}>Change Name</button>
-          <button on:click={resetName}>Reset Name</button>
-        </main>`
-    </code>
-</pre>
+    <main>
+        <h1>Hello {name}!</h1>
+        <button on:click={changeName}>Change Name</button>
+        <button on:click={resetName}>Reset Name</button>
+    </main>
 
 We can also change variables directly in the HTML by using a function in the on:click event :
 
