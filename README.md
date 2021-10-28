@@ -101,9 +101,9 @@ Variables in Svelte can be defined in the script portion and used in the HTML us
 
 In your script tag:
 
-`export let name = "My Name"`
+`let name = "My Name"`
 
-You can then use this variable in your HTNL code using curly braces:
+You can then use this variable in your HTML code using curly braces:
 
 `<div> Hello {name} </div>`
 
@@ -117,14 +117,19 @@ For example, we can create a function to change the name value and add an `on:cl
 
 In the script tags:
 
-``export let name = 'Alastair'
+<code><pre>
+export let name = 'Alastair'
+
 function changeName() {
 name = 'New Name'
 }
 
 function resetName() {
 name = 'Alastair'
-}``
+}
+
+</pre>
+</code>
 
 ``
 
