@@ -8,7 +8,12 @@ This is a non-comprehensive, work in pogress, on using Svelte.js for data visual
 - You have working experience of HTML, CSS and Javascript
 - You have some experience of [D3.js](https://d3js.org/)
 
-## Introduction
+# Contents
+
+- [Introduction](#introduction)
+- [Related documents & sources](#related-docs)
+
+## Introduction <a name="introduction"></a>
 
 [Svelte](https://svelte.dev/) is a component library and [SvelteKit](https://kit.svelte.dev/) is an app framework. In practice Svelte can be used to build single-page applications while SvelteKit can be used to build more complex applications. This documentation will focus on Svelte but the principles and practices are mostly applicable to SvelteKit as well.
 
@@ -45,7 +50,13 @@ Start a new Svelte project:
 
 `npx degit sveltejs/template my-svelte-project`
 
-Replace “my-svelte-project” with the name of your project.
+_**Note**: You can also use the [MediaHackZA Svelte template](https://github.com/mediahackza/svelte-template) to start a new project. This template includes a numnber of styles specific to Media Hack projects (eg. CSS files, favicon etc)_
+
+To use the MHC template you can run:
+
+`npm degit mediahackza/svelte-template my-svelte-project`
+
+In both cases above, replace "my-svelte-project" with the name of your project.
 
 Switch into the new directory created:
 
@@ -149,3 +160,7 @@ For example, we can console.log the value of name when it changes. Add this to t
 `$: console.log(name)`
 
 If you open the developer tools you’ll see the value of name output each time the button is changed.
+
+## Related documents & sources <a name="related-docs"></a>
+
+- [Mediahackza Svelte template](https://github.com/mediahackza/svelte-template): a customised template for use with MHC projects but also basic enough to be used as a starter for most projects.
