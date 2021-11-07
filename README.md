@@ -50,7 +50,7 @@ Start a new Svelte project:
 
 `npx degit sveltejs/template my-svelte-project`
 
-_**Note**: You can also use the [MediaHackZA Svelte template](https://github.com/mediahackza/svelte-template) to start a new project. This template includes a numnber of styles specific to Media Hack projects (eg. CSS files, favicon etc)_
+_**Note**: You can also use the [MediaHackZA Svelte template](https://github.com/mediahackza/svelte-template) to start a new project. This template was created for internal use but is generic enough to be a useful starter for most projects. The template also includes most of the required packages/tools required for the projects in this guide._
 
 To use the MHC template you can run:
 
@@ -103,6 +103,12 @@ Final code can be built using
 `npm run build`
 
 This will build the code in the `public` folder by default
+
+### Client side routing
+
+This document covers Svelte and not SvelteKit. Svelte kit includes it's own file-based router, but Svelte does not. There are many third-party routers that can be used with Svelte. This document will be based on using [Svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router) which is eas to use and suitable for most client-side projects.
+
+_[This video](https://www.youtube.com/watch?v=EL1qM0cv0eA) by Svelte-spa-router creator Alessandro Segala is worth watching for a good introduction to various routing approaches._
 
 ## Svelte code starter
 
